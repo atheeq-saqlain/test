@@ -7,7 +7,7 @@ document.addEventListener('keydown',function(event){
 
 for(let i = 0; i<document.querySelectorAll(".drum").length; i++){
     document.querySelectorAll(".drum")[i].addEventListener('click',function(){        
-
+        console.log('test log');
         var buttonInnerHtml= this.innerText;
         animateButton(buttonInnerHtml);
         keyPlay(buttonInnerHtml);
